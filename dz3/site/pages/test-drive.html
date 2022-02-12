@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz3_shtei</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>BMW AUTOMAG<img src="../assets/img/car-logo.ico" alt="logo"></h1>
+            <nav>
+                <a href="../index.html">Главная</a>
+                <a href="./registration.html">Регистрация</a>
+                <a href="./login.html">Авторизация</a>
+                <a href="./search.html">Поиск</a>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h2>Записаться на тест-драйв</h2>
+        <div class="container">
+            <div>Приглашаем Вас осуществить тест-драйв.
+                <p>Оставьте свою контактную информацию и мы свяжемся с вами:</p>
+            </div>
+            <form action="https://fom.in.ua/echo" method="post">
+                <input class="form" type="hidden">
+                <div class="form-group">
+                    <label for="auto-drive">Автомобиль для тест-драйва*</label>
+                    <select class="form" id="auto-drive">
+                        <option value="selected">Выбрать Автомобиль</option>
+                        <option value="X1">BMW X1</option>
+                        <option value="X2">BMW X2</option>
+                        <option value="X3">BMW X3</option>
+                        <option value="X4">BMW X4</option>
+                        <option value="X5">BMW X5</option>
+                        <option value="X6">BMW X6</option>
+                        <option value="X7">BMW X7</option>
+                    </select>
+                    <br>
+                    <p><label for="firstname">Имя*</label>
+                        <input class="form" id="firstname" name="firstname" type="text">
+                        <label for="lastname">Фамилия*</label>
+                        <input class="form" id="lastname" name="lastname" type="text">
+                    </p>
+                    <br>
+                    <p>
+                        <label for="phone">Телефон*</label>
+                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="38(0..)...-..-..">
+                        <label for="email">E-mail:</label>
+                        <input class="form-control" id="email" name="email" type="email">
+                    </p>
+                    <p><label for="drive">Выберите желаемую дату тест-драйва:</label>
+                        <input type="date" id="drive" name="data">
+                    </p>
+                </div>
+                <span>
+                    <label>
+                        <input type="checkbox" name="remember">*Мне больше 18 лет, и у меня есть действительные
+                        водительские права.
+                    </label>
+                </span>
+                <p><button class="info" type="submit" id="send-info">Отправить</button>
+                </p>
+            </form>
+            <p>* поля обязательные для заполнения.</p>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./contacts.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="./test-drive.html">Записаться на тест-драйв</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <div>
+            <a id="scroll2Top" href="test-drive.html" title="Наверх">Наверх</a>
+        </div>
+    </footer>
+</body>
+
+</html>

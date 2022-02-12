@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz3_shtei</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>BMW AUTOMAG<img src="../assets/img/car-logo.ico" alt="logo"></h1>
+            <nav>
+                <a href="../index.html">Главная</a>
+                <a href="./registration.html">Регистрация</a>
+                <a href="./login.html">Авторизация</a>
+                <a href="./search.html">Поиск</a>
+            </nav>
+        </div>
+    </header>
+    <h2>Расширеный поиск</h2>
+    <form action="https://fom.in.ua/echo" method="post" id="search">
+        <div class="bodytype">
+            <label class="bodytype"><strong>Тип кузова:</strong></label>
+            <p><input type="checkbox" id="coupe" name="coupe" value="coupe">
+                <label for="coupe">Купе</label>
+                <input type="checkbox" id="cabriolet" name="cabriolet" value="cabriolet">
+                <label for="cabriolet">Кабриолет</label>
+                <input type="checkbox" id="crossover" name="crossover" value="crossover">
+                <label for="crossover">Кроссовер</label>
+            </p>
+        </div>
+        <div class="cols-1">
+            <label class="model"><strong>Модель:</strong></label>
+            <select class="model" id="model">
+                <option value="X">Выбрать Модель</option>
+                <option value="X1">BMW X1</option>
+                <option value="X2">BMW X2</option>
+                <option value="X3">BMW X3</option>
+                <option value="X4">BMW X4</option>
+                <option value="X5">BMW X5</option>
+                <option value="X6">BMW X6</option>
+                <option value="X7">BMW X7</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p><strong>Год выпуска:</strong>
+                <input type="number" id="year-from" name="year" placeholder="От" min="2000" max="2021" step="1">
+                <label for="year-from"></label>
+                <input type="number" id="year-to" name="year" placeholder="До" min="2000" max="2021" step="1">
+                <label for="year-to"></label>
+            </p>
+        </div>
+        <br>
+        <div>
+            <p><strong>Цена:</strong>
+                <input type="number" id="price-from" name="currency" placeholder="От" min="500000" max="10000000"
+                    step="10000">
+                <label for="price-from"></label>
+                <input type="number" id="price-to" name="currency" placeholder="До" min="500000" max="10000000"
+                    step="10000">
+                <label for="price-to"></label>
+                <select name="currency" id="currency">
+                    <option value="UAH">Грн</option>
+                    <option value="USD">$</option>
+                </select>
+            </p>
+        </div>
+        <br>
+        <div class="cols-2">
+            <label for="auto-region"><strong>Страна производитель</strong></label>
+            <select size="3" id="auto-region">
+                <option value="selected">Выбрать регион</option>
+                <option value="Germany1">Германия</option>
+                <option value="Germany2">Германия2</option>
+            </select>
+        </div>
+        <br>
+        <fieldset>
+            <legend>Выберите коробку передач</legend>
+            <div>
+                <input type="radio" id="automatic" name="case" value="automatic" checked>
+                <label for="automatic">Автомат</label>
+                <input type="radio" id="machine" name="case" value="machine">
+                <label for="machine">Механическая</label>
+            </div>
+        </fieldset>
+        <div id="select_color" class="List"><strong>Цвет авто:</strong>
+            <span><label for="red">красный</label>
+                <input type="checkbox" id="red" name="red">
+            </span>
+            <span><label for="green">зелёный</label>
+                <input type="checkbox" id="green" name="green">
+            </span>
+            <span><label for="black">чёрный</label>
+                <input type="checkbox" id="black" name="black">
+            </span>
+            <span><label for="grey">серый</label>
+                <input type="checkbox" id="grey" name="grey">
+            </span>
+        </div>
+        <div class="bodytype-2">
+            <p><label><strong>Состояние авто:</strong></label>
+                <input type="checkbox" id="new" name="new" value="new">
+                <label for="new">Новое</label>
+                <input type="checkbox" id="used" name="used" value="used">
+                <label for="used">Б/у</label>
+                <input type="checkbox" id="dtp" name="dtp" value="dtpl">
+                <label for="dtp">После ДТП</label>
+            </p>
+        </div>
+        <div class="rows"><strong>Комфортабельность:</strong>
+            <p><label for="skin">Кожаный салон</label>
+                <input type="checkbox" id="skin" name="skin">
+            </p>
+            <p><label for="mirror">Подогрев зеркал</label>
+                <input type="checkbox" id="mirror" name="mirror">
+            </p>
+            <p><label for="power">Запуск кнопкой</label>
+                <input type="checkbox" id="power" name="power">
+            </p>
+        </div>
+        <p><button class="button" type="submit">ПОИСК</button>
+        </p>
+    </form>
+    <br>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./contacts.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="./test-drive.html">Записаться на тест-драйв</a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <div>
+            <a id="scroll2Top" href="./search.html" title="Наверх">Наверх</a>
+        </div>
+    </footer>
+</body>
+
+</html>
