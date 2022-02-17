@@ -23,51 +23,60 @@
     <h2>Расширеный поиск</h2>
     <form action="https://fom.in.ua/echo" method="post" id="search">
         <div class="bodytype">
-            <label class="bodytype"><strong>Тип кузова:</strong></label>
-            <p><input type="checkbox" id="coupe" name="coupe" value="coupe">
-                <label for="coupe">Купе</label>
-                <input type="checkbox" id="cabriolet" name="cabriolet" value="cabriolet">
-                <label for="cabriolet">Кабриолет</label>
-                <input type="checkbox" id="crossover" name="crossover" value="crossover">
-                <label for="crossover">Кроссовер</label>
-            </p>
+            <div><strong>Тип кузова:</strong></div>
+            <input type="checkbox" id="coupe" name="coupe" value="coupe">
+            <label for="coupe">Купе</label>
+            <input type="checkbox" id="cabriolet" name="cabriolet" value="cabriolet">
+            <label for="cabriolet">Кабриолет</label>
+            <input type="checkbox" id="crossover" name="crossover" value="crossover">
+            <label for="crossover">Кроссовер</label>
         </div>
+        <br>
+        <div class="model">
+            <div><strong>Модель:</strong></div>
+            <input type="radio" id="X1" value="X1" name="X1">
+            <label for="X2">BMW X1</label>
+            <br>
+            <input type="radio" id="X2" name="X2" value="X2">
+            <label for="X2">BMW X2</label>
+            <br>
+            <input type="radio" id="X3" name="X3" value="X3">
+            <label for="X3">BMW X3</label>
+            <br>
+            <input type="radio" id="X4" name="X4" value="X4">
+            <label for="X4">BMW X4</label>
+            <br>
+            <input type="radio" id="X5" name="X5" value="X5">
+            <label for="X5">BMW X5</label>
+            <br>
+            <input type="radio" id="X6" name="X6" value="X6">
+            <label for="X6">BMW X6</label>
+            <br>
+            <input type="radio" id="X7" name="X7" value="X7">
+            <label for="X7">BMW X7</label>
+        </div>
+        <br>
+        <div>
+            <div><strong>Год выпуска:</strong></div>
+            <input type="number" id="year-from" name="year" placeholder="От" min="2000" max="2021" step="1">
+            <label for="year-from"></label>
+            <input type="number" id="year-to" name="year" placeholder="До" min="2000" max="2021" step="1">
+            <label for="year-to"></label>
+        </div>
+        <br>
         <div class="cols-1">
-            <label class="model"><strong>Модель:</strong></label>
-            <select class="model" id="model">
-                <option value="X">Выбрать Модель</option>
-                <option value="X1">BMW X1</option>
-                <option value="X2">BMW X2</option>
-                <option value="X3">BMW X3</option>
-                <option value="X4">BMW X4</option>
-                <option value="X5">BMW X5</option>
-                <option value="X6">BMW X6</option>
-                <option value="X7">BMW X7</option>
+            <div><strong>Цена:</strong></div>
+            <label for="price-from"></label>
+            <input type="number" id="price-from" name="currency" placeholder="От" min="500000" max="10000000"
+                step="10000">
+            <label for="price-from"></label>
+            <input type="number" id="price-to" name="currency" placeholder="До" min="500000" max="10000000"
+                step="10000">
+            <label for="price-to"></label>
+            <select name="currency" id="currency">
+                <option value="UAH">Грн</option>
+                <option value="USD">$</option>
             </select>
-        </div>
-        <br>
-        <div>
-            <p><strong>Год выпуска:</strong>
-                <input type="number" id="year-from" name="year" placeholder="От" min="2000" max="2021" step="1">
-                <label for="year-from"></label>
-                <input type="number" id="year-to" name="year" placeholder="До" min="2000" max="2021" step="1">
-                <label for="year-to"></label>
-            </p>
-        </div>
-        <br>
-        <div>
-            <p><strong>Цена:</strong>
-                <input type="number" id="price-from" name="currency" placeholder="От" min="500000" max="10000000"
-                    step="10000">
-                <label for="price-from"></label>
-                <input type="number" id="price-to" name="currency" placeholder="До" min="500000" max="10000000"
-                    step="10000">
-                <label for="price-to"></label>
-                <select name="currency" id="currency">
-                    <option value="UAH">Грн</option>
-                    <option value="USD">$</option>
-                </select>
-            </p>
         </div>
         <br>
         <div class="cols-2">
@@ -88,43 +97,43 @@
                 <label for="machine">Механическая</label>
             </div>
         </fieldset>
-        <div id="select_color" class="List"><strong>Цвет авто:</strong>
-            <span><label for="red">красный</label>
-                <input type="checkbox" id="red" name="red">
-            </span>
-            <span><label for="green">зелёный</label>
-                <input type="checkbox" id="green" name="green">
-            </span>
-            <span><label for="black">чёрный</label>
-                <input type="checkbox" id="black" name="black">
-            </span>
-            <span><label for="grey">серый</label>
-                <input type="checkbox" id="grey" name="grey">
-            </span>
+        <br>
+        <div class="cols-3">
+            <div><strong>Цвет авто:</strong></div>
+            <label for="red">красный</label>
+            <input type="checkbox" id="red" name="red">
+            <label for="green">зелёный</label>
+            <input type="checkbox" id="green" name="green">
+            <label for="black">чёрный</label>
+            <input type="checkbox" id="black" name="black">
+            <label for="grey">серый</label>
+            <input type="checkbox" id="grey" name="grey">
         </div>
+        <br>
         <div class="bodytype-2">
-            <p><label><strong>Состояние авто:</strong></label>
-                <input type="checkbox" id="new" name="new" value="new">
-                <label for="new">Новое</label>
-                <input type="checkbox" id="used" name="used" value="used">
-                <label for="used">Б/у</label>
-                <input type="checkbox" id="dtp" name="dtp" value="dtpl">
-                <label for="dtp">После ДТП</label>
-            </p>
+            <div><strong>Состояние авто:</strong></div>
+            <input type="checkbox" id="new" name="new" value="new">
+            <label for="new">Новое</label>
+            <input type="checkbox" id="used" name="used" value="used">
+            <label for="used">Б/у</label>
+            <input type="checkbox" id="dtp" name="dtp" value="dtp">
+            <label for="dtp">После ДТП</label>
         </div>
+        <br>
         <div class="rows"><strong>Комфортабельность:</strong>
-            <p><label for="skin">Кожаный салон</label>
-                <input type="checkbox" id="skin" name="skin">
-            </p>
-            <p><label for="mirror">Подогрев зеркал</label>
-                <input type="checkbox" id="mirror" name="mirror">
-            </p>
-            <p><label for="power">Запуск кнопкой</label>
-                <input type="checkbox" id="power" name="power">
-            </p>
+            <br>
+            <label for="skin">Кожаный салон</label>
+            <input type="checkbox" id="skin" name="skin">
+            <br>
+            <label for="mirror">Подогрев зеркал</label>
+            <input type="checkbox" id="mirror" name="mirror">
+            <br>
+            <label for="power">Запуск кнопкой</label>
+            <input type="checkbox" id="power" name="power">
         </div>
-        <p><button class="button" type="submit">ПОИСК</button>
-        </p>
+        <br>
+        <button class="button">ПОИСК</button>
+
     </form>
     <br>
     <footer>

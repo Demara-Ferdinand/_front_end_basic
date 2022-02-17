@@ -24,33 +24,44 @@
         <form action="https://fom.in.ua/echo" method="post" id="form_reg">
             <div class="container">
                 <h2>Для регистрации заполните форму:</h2>
-                <p>Имя:
-                    <input name="name" tabindex="1">
-                </p>
-                <p>Фамилия:
-                    <input name="lastname" tabindex="3">
-                </p>
-                <p>Телефон:<input name="tel" type="tel" tabindex="2"></p>
-                <p>Пол: <select name="gender" tabindex="4">
+                <div>Имя:
+                    <input name="name" required>
+                </div>
+                <br>
+                <div>Фамилия:
+                    <input name="lastname" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Пол:</label>
+                    <select id="gender" name="gender">
                         <option selected>Мужской</option>
                         <option>Женский</option>
                         <option>Другой</option>
-                    </select></p>
-                <p><label for="email"><b>Email</b></label>
+                    </select>
+                </div>
+                <br>
+                <div><label for="email"><b>Email</b></label>
                     <input id="email" type="text" placeholder="Введите вашу почту" name="email" required>
-                </p>
-                <p><label for="password"><b>Пароль</b></label>
+                </div>
+                <br>
+                <div><label for="password"><b>Пароль</b></label>
                     <input id="password" type="password" placeholder="Введите пароль" name="password" required>
-                </p>
-                <p>
+                </div>
+                <br>
+                <div>
                     <label for="password-repeat"><b>Повторить пароль</b></label>
-                    <input id="password-repeat" type="password" placeholder="Повторите пароль" name="password-repeat" required>
-                </p>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember">Запомнить меня
-                </label>
-                <p><button type="submit" class="signupbtn">Регистрация</button>
-                </p>
+                    <input id="password-repeat" type="password" placeholder="Повторите пароль" name="password-repeat"
+                        required>
+                </div>
+                <br>
+                <div><button class="signupbtn">Регистрация</button>
+                </div>
             </div>
         </form>
     </main>

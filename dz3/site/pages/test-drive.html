@@ -22,53 +22,64 @@
     </header>
     <hr>
     <main>
-        <h2>Записаться на тест-драйв</h2>
         <div class="container">
+            <h2>Записаться на тест-драйв</h2>
             <div>Приглашаем Вас осуществить тест-драйв.
                 <p>Оставьте свою контактную информацию и мы свяжемся с вами:</p>
             </div>
-            <form action="https://fom.in.ua/echo" method="post">
-                <input class="form" type="hidden">
-                <div class="form-group">
-                    <label for="auto-drive">Автомобиль для тест-драйва*</label>
-                    <select class="form" id="auto-drive">
-                        <option value="selected">Выбрать Автомобиль</option>
-                        <option value="X1">BMW X1</option>
-                        <option value="X2">BMW X2</option>
-                        <option value="X3">BMW X3</option>
-                        <option value="X4">BMW X4</option>
-                        <option value="X5">BMW X5</option>
-                        <option value="X6">BMW X6</option>
-                        <option value="X7">BMW X7</option>
-                    </select>
-                    <br>
-                    <p><label for="firstname">Имя*</label>
-                        <input class="form" id="firstname" name="firstname" type="text">
-                        <label for="lastname">Фамилия*</label>
-                        <input class="form" id="lastname" name="lastname" type="text">
-                    </p>
-                    <br>
-                    <p>
-                        <label for="phone">Телефон*</label>
-                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="38(0..)...-..-..">
-                        <label for="email">E-mail:</label>
-                        <input class="form-control" id="email" name="email" type="email">
-                    </p>
-                    <p><label for="drive">Выберите желаемую дату тест-драйва:</label>
-                        <input type="date" id="drive" name="data">
-                    </p>
-                </div>
-                <span>
-                    <label>
-                        <input type="checkbox" name="remember">*Мне больше 18 лет, и у меня есть действительные
-                        водительские права.
-                    </label>
-                </span>
-                <p><button class="info" type="submit" id="send-info">Отправить</button>
-                </p>
-            </form>
-            <p>* поля обязательные для заполнения.</p>
         </div>
+        <form action="https://fom.in.ua/echo" method="post">
+            <div class="list">
+                <div><strong>Выберите модель для тест-драйва:</strong></div>
+                <input type="radio" id="X1" name="car-drive" value="X1">
+                <label for="X2">BMW X1</label>
+                <br>
+                <input type="radio" id="X2" name="car-drive" value="X2">
+                <label for="X2">BMW X2</label>
+                <br>
+                <input type="radio" id="X3" name="car-drive" value="X3">
+                <label for="X3">BMW X3</label>
+                <br>
+                <input type="radio" id="X4" name="car-drive" value="X4">
+                <label for="X4">BMW X4</label>
+                <br>
+                <input type="radio" id="X5" name="car-drive" value="X5">
+                <label for="X5">BMW X5</label>
+                <br>
+                <input type="radio" id="X6" name="car-drive" value="X6">
+                <label for="X6">BMW X6</label>
+                <br>
+                <input type="radio" id="X7" name="car-drive" value="X7" checked>
+                <label for="X7">BMW X7</label>
+            </div>
+            <br>
+            <div>
+                <label for="firstname">Имя*</label>
+                <input class="form" id="firstname" name="firstname" type="text" required>
+                <label for="lastname">Фамилия*</label>
+                <input class="form" id="lastname" name="lastname" type="text" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Телефон*</label>
+                <input class="form-control" id="phone" name="phone" type="tel" placeholder="38(0..)...-..-.." required>
+                <label for="email">E-mail:</label>
+                <input class="form-control" id="email" name="email" type="email">
+            </div>
+            <br>
+            <div>
+                <label for="drive">Выберите желаемую дату тест-драйва:</label>
+                <input type="date" id="drive" name="data">
+            </div>
+            <br>
+            <div>
+                <label></label>
+                <input type="checkbox" name="remember">*Мне больше 18 лет, и у меня есть действительные
+                водительские права.
+            </div>
+            <button class="info" id="send-info">Отправить</button>
+        </form>
+        <p>* поля обязательные для заполнения.</p>
     </main>
     <br>
     <footer>
